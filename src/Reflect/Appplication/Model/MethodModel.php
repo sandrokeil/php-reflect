@@ -144,6 +144,16 @@ class MethodModel extends AbstractFunctionModel
         return $this->node->getAttribute('implicitlyPublic', false);
     }
 
+    public function returnType()
+    {
+        return $this->node->returnType;
+    }
+
+    public function node()
+    {
+        return $this->node;
+    }
+
     /**
      * Returns the string representation of the MethodModel object.
      *
